@@ -1,0 +1,24 @@
+<h2 class="page-header">Marketing Budget</h2>
+<br>
+
+<div id="tabela" class="container">
+  <div class="row" id="header">
+          <div class=".col-xs-6 col-sm-4"><h3> Item</h3></div>
+          <div class=".col-xs-6 col-sm-4"> <h3>Previsto</h3></div>
+          <div class=".col-xs-6 col-sm-4"><h3>Realizado</h3></div>
+  </div>
+    <div class="row resultado" >
+
+    {{#each metas}}
+            <ul>
+                    <div class=".col-xs-6 col-sm-4">{{nome}}</div>
+                    <div class=".col-xs-6 col-sm-4">{{previsto}}</div>
+                    <div class=".col-xs-6 col-sm-4">{{realizado}}</div>
+            </ul>
+    {{/each}}
+  </div>
+
+
+
+</div>
+<br><br><br>
