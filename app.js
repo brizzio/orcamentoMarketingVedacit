@@ -12,10 +12,13 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var config = require('./config/database');
 
-//mongoose.connect('mongodb://localhost/mktvedacit');
+
 //conecta com o sandbox do mlab
-mongoose.connect('mongodb://localhost/maindb');
 //mongoose.connect(config.database);
+
+mongoose.connect('mongodb://localhost/mktvedacit');
+//mongoose.connect('mongodb://localhost/maindb');
+
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
